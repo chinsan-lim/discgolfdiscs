@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Disc = require('../models/Disc');
 
-// List all discs/manufacturer
+// List all discs
 router.get('/', async (req, res, next) => {
 	try {
 		const disc = await Disc.find({});
@@ -12,7 +12,7 @@ router.get('/', async (req, res, next) => {
 	}
 });
 
-// List a single discs/manufacturer by id
+// List a single discs by id
 router.get('/:id', async (req, res, next) => {
 	try {
 		const disc = await Disc.findById(req.params.id);
@@ -26,7 +26,7 @@ router.get('/:id', async (req, res, next) => {
 	}
 });
 
-// Create a discs/manufacturer
+// Create a discs
 router.post('/', async (req, res, next) => {
 	try {
 		const newDisc = await Disc.create(req.body);
@@ -36,7 +36,7 @@ router.post('/', async (req, res, next) => {
 	}
 });
 
-// Update a single discs/manufacturer by id
+// Update a single discs by id
 router.put('/:id', async (req, res, next) => {
 	try {
 		const discToUpdate = await Disc.findByIdAndUpdate(req.params.id, req.body, {
@@ -49,7 +49,7 @@ router.put('/:id', async (req, res, next) => {
 	}
 });
 
-// Delete a discs/manufacturer by id
+// Delete a discs by id
 router.delete('/:id', async (req, res, next) => {
 	try {
 		const deletedDisc = await Disc.findOneAndDelete({

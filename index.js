@@ -13,14 +13,12 @@ app.use(cors());
 // Redirect
 
 app.get('/', (req, res) => {
-	res.redirect('/api/disc');
+	res.redirect('/discs');
 });
 
 /* START CONTROLLERS HERE */
 const discController = require('./controllers/discController');
-app.use('/api/disc', discController);
-const manufacturerController = require('./controllers/manufacturerController');
-app.use('/api/manufacturer', manufacturerController);
+app.use('/discs', discController);
 
 /* END CONTROLLERS HERE */
 app.use((err, req, res, next) => {
