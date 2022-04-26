@@ -1,20 +1,16 @@
 const mongoose = require('../db/connection');
 
 const DiscSchema = new mongoose.Schema({
-	id: Number,
-	name: String,
-	ratings: {
-		speed: Number,
-		glide: Number,
-		turn: Number,
-		fade: Number,
-	},
-	measurements: {
-		diameter: Number,
-		height: Number,
-		rimdepth: Number,
-		rimwidth: Number,
-	},
+	Manufacturer: String,
+	Name: String,
+	Speed: Number,
+	Glide: Number,
+	Turn: Number,
+	Fade: Number,
+	Diameter: Number,
+	Height: Number,
+	RimDepth: Number,
+	RimWidth: Number,
 });
 
 const Disc = mongoose.model('Disc', DiscSchema);
