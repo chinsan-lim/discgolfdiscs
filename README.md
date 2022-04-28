@@ -18,6 +18,7 @@ https://discgolfdiscs.herokuapp.com/discs
 ## Endpoints:
 
 all discs - /discs
+<br />
 individual disc - /discs/:id
 
 ## Technologies Used
