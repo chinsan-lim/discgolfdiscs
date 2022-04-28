@@ -12,7 +12,7 @@ Each disc has:
  - RimDepth
  - RimWidth
 
-All flight ratings were collected via [this app](https://www.reddit.com/r/discgolf/comments/kna7gq/discsearcher_is_born/) and PDGA approved discs.
+All flight ratings were collected via [DiscSearcher](https://www.reddit.com/r/discgolf/comments/kna7gq/discsearcher_is_born/) and PDGA approved discs.
 
 ## Deployed API <br />
 https://discgolfdiscs.herokuapp.com/discs
