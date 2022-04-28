@@ -23,6 +23,11 @@ all discs - /discs
 <br />
 individual disc - /discs/:id
 
+## Endpoints to be added
+- filter by manufacturer
+- filter by each flight rating
+- attach over/unstable tags to each disc
+
 ## Technologies Used
 - Node.js
 - Mongoose
