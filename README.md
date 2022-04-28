@@ -12,15 +12,15 @@ Each disc has:
  - RimDepth
  - RimWidth
 
-##Deployed API <br />
+## Deployed API <br />
 https://discgolfdiscs.herokuapp.com/discs
 
-##Endpoints:
+## Endpoints:
 
 all discs - /discs
 individual disc - /discs/:id
 
-##Technologies Used
+## Technologies Used
 - Node.js
 - Mongoose
 - Express
@@ -28,7 +28,7 @@ individual disc - /discs/:id
 - dotenv
 - cors
 
-##Disc Model
+## Disc Model
 
 ```
 const DiscSchema = new mongoose.Schema({
@@ -45,7 +45,7 @@ const DiscSchema = new mongoose.Schema({
 })
 ```
 
-##Installation
+## Installation
 1. Fork and clone repo
 2. If you identify bugs, submit an issue on the Git repo. Please detail the bug in your issue. 
 3. If you know how to fix it, feel free to note the methods you would use. You could also submit a pull request with suggested code to fix it.
