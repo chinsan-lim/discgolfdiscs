@@ -19,6 +19,8 @@ app.get('/', (req, res) => {
 /* START CONTROLLERS HERE */
 const discController = require('./controllers/discController');
 app.use('/discs', discController);
+const manufacturerController = require('./controllers/manufacturerController');
+app.use('/manufacturers', manufacturerController);
 
 /* END CONTROLLERS HERE */
 app.use((err, req, res, next) => {
