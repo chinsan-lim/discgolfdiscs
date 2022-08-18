@@ -2,10 +2,7 @@ const mongoose = require('mongoose');
 
 const Disc = require('../models/Disc');
 
-// Require our Bookmarks seeds
 const DiscSeed = require('./disc.json');
-
-// Logic to empty database
 
 	DiscSeed.map((disc) => {
 		return { ...disc };
